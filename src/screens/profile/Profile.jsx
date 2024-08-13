@@ -1,7 +1,10 @@
 import React from 'react'
+import "../profile/profile.css"
 
-export default function Profile() {
+const Profile = () => {
   return (
     <div>Profile</div>
   )
 }
+
+export default Profile;
