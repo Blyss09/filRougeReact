@@ -1,15 +1,13 @@
-import React from 'react'
-import Header from '../../components/header/Header'
-import "../games/games.css"
-import GameCards from '../../components/gameCard/gameCards'
+import Header from '../../components/header/Header';
+import GameCards from '../../components/gameCard/gameCards';
 
 const Games = () => {
   return (
     <>
-    <Header />
-    <GameCards />
+      <Header />
+      <GameCards />
     </>
-  )
+  );
 }
 
 export default Games;

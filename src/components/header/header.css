@@ -1,4 +1,4 @@
-.burger-menu {
+.nav .burger-menu {
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 
-.burger-menu .bar {
+.nav .burger-menu .bar {
   width: 100%;
   height: 4px;
   background-color: #333;
@@ -25,65 +25,56 @@
   padding-top: 10px;
 }
 
-.active {
+.nav ul li.active a {
   color: rgb(255, 8, 255);
 }
 
-#navigation-content {
+.nav #navigation-content {
   display: flex;
   flex-direction: row;
   font-size: 28px;
 }
 
-#navigation-content li {
+.nav #navigation-content li a {
   padding-right: 70px;
 }
 
-#navigation-content li:last-child {
-  padding-right: 0;
-}
-
-.navigation {
+.nav .navigation {
   display: flex;
   flex-direction: row;
   font-size: 28px;
 }
 
-#navigationBurger-content {
+.nav #navigationBurger-content {
   display: none;
 }
 
-.navigation li {
+.nav .navigation li {
   padding: 30px;
 }
 
-.logo img {
+.nav .logo img {
   width: 8vw;
   border-radius: 100px;
 }
 
 /* Styles pour la navigation mobile */
 @media (max-width: 767px) {
-  body {
-    overflow-y: scroll;
-    background-attachment: fixed;
-  }
-
   header {
     position: fixed;
     width: 100%;
     z-index: 3000;
   }
 
-  .burger-menu {
+  .nav .burger-menu {
     display: flex;
   }
 
-  .overflowHidden {
+  .nav .overflowHidden {
     overflow: hidden;
   }
 
-  .navigation {
+  .nav .navigation {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,23 +89,23 @@
     transition: 0.5s ease;
   }
 
-  .navigationHeader {
+  .nav .navigationHeader {
     display: none;
   }
 
-  #navigationBurger-content {
+  .nav #navigationBurger-content {
     display: block;
   }
 
-  #navigationBurger-content li {
+  .nav #navigationBurger-content li {
     margin-bottom: 30px;
   }
 
-  #navigationBurger-content li:last-child {
+  .nav #navigationBurger-content li:last-child {
     margin-bottom: 0;
   }
 
-  .navigation.active {
+  .nav .navigation.active {
     height: 100vh;
     position: absolute;
     max-height: 100%;
@@ -123,12 +114,25 @@
     z-index: 2999;
   }
 
-  .navigation li {
+  .nav .navigation li {
     padding: 15px 0;
   }
 
-  .logo img {
+  .nav .logo img {
     width: 80px;
     max-width: 25vw;
   }
+}
+
+.nav .logout-button {
+  background-color: transparent;
+  border: none;
+  color: ;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.nav .logout-button:hover {
+  color: #f00; /* Change la couleur au survol */
 }

@@ -1,4 +1,6 @@
-.container{
+
+
+.game_card .container{
     position: relative;
     display: flex;
     align-items: center;
@@ -6,19 +8,23 @@
     justify-content: space-around;
 }
 
+.game_card .text_game {
+    color: black;
+}
 
-.container .card{
+.game_card .container .card{
     position: relative;
     cursor: pointer;
 }
 
-.container .card .face{
+.game_card .container .card .face{
     width: 300px;
     height: 200px;
     transition: 0.5s;
+
 }
 
-.container .card .face.face1{
+.game_card .container .card .face.face1{
     position: relative;
     background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
     display: flex;
@@ -28,25 +34,25 @@
     transform: translateY(100px);
 }
 
-.container .card:hover .face.face1{
+.game_card .container .card:hover .face.face1{
     background: linear-gradient(90deg, #ad5389 0%, #3c1053 100%);
     transform: translateY(0);
 }
 
-.container .card .face.face1 .content{
+.game_card .container .card .face.face1 .content{
     opacity: 0.2;
     transition: 0.5s;
 }
 
-.container .card:hover .face.face1 .content{
+.game_card .container .card:hover .face.face1 .content{
     opacity: 1;
 }
 
-.container .card .face.face1 .content img{
+.game_card .container .card .face.face1 .content img{
     max-width: 100px;
 }
 
-.container .card .face.face1 .content h3{
+.game_card .container .card .face.face1 .content h3{
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
@@ -54,7 +60,7 @@
     font-size: 1.5em;
 }
 
-.container .card .face.face2{
+.game_card .container .card .face.face2{
     position: relative;
     background: #fff;
     display: flex;
@@ -66,16 +72,16 @@
     transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2{
+.game_card .container .card:hover .face.face2{
     transform: translateY(0);
 }
 
-.container .card .face.face2 .content p{
+.game_card .container .card .face.face2 .content p{
     margin: 0;
     padding: 0;
 }
 
-.container .card .face.face2 .content a{
+.game_card .container .card .face.face2 .content a{
     margin: 15px 0 0;
     display:  inline-block;
     text-decoration: none;
@@ -85,7 +91,7 @@
     border: 1px solid linear-gradient(90deg, #667eea 0%, #764ba2 100%);
 }
 
-.container .card .face.face2 .content a:hover{
+.game_card .container .card .face.face2 .content a:hover{
     background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
     color: #fff;
 }
@@ -97,21 +103,15 @@
         background-attachment: fixed;
     }
 
-    header {
-        position: fixed;
-        width: 100%;
-        z-index: 3000;
-    }
-
-    .burger-menu {
+    .game_card .burger-menu {
         display: flex;
     }
 
-    .overflowHidden {
+    .game_card .overflowHidden {
         overflow: hidden;
     }
 
-    .navigation {
+    .game_card .navigation {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -126,24 +126,24 @@
         transition: 0.5s ease;
     }
     
-    .navigationHeader {
+    .game_card .navigationHeader {
         display: none;
     }
  
 
-    #navigationBurger-content {
+    .game_card #navigationBurger-content {
         display: block;
     }
 
-    #navigationBurger-content li {
+    .game_card #navigationBurger-content li {
         margin-bottom: 30px;
     }
 
-    #navigationBurger-content li:last-child {
+    .game_card #navigationBurger-content li:last-child {
         margin-bottom: 0;
     }
 
-    .navigation.active {
+    .game_card .navigation.active {
         height: 100vh;
         position: absolute;
         max-height: 100%;
@@ -152,22 +152,18 @@
         z-index: 2999;
     }
 
-    .navigation li {
+    .game_card .navigation li {
         padding: 15px 0;
     }
 
-    .logo img {
+    .game_card .logo img {
         width: 80px;
         max-width: 25vw;
     }
 
-    .container {
+    .game_card .container {
         display: flex;
         flex-direction: column;
-    }
-
-    .container:first-child {
-        padding-top: 100px;
     }
 
 }

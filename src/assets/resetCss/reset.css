@@ -27,7 +27,6 @@ body {
     background-repeat: no-repeat; 
     margin: 0; 
     height: 100vh;
-    overflow: hidden;
 }
 ol, ul {
 	list-style: none;

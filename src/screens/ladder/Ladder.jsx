@@ -1,4 +1,3 @@
-import React from 'react'
 import "../ladder/ladder.css"
 import Header from '../../components/header/Header'
 

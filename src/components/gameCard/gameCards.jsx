@@ -1,10 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import '../gameCard/gameCards.css';
 
 const GameCards = () => {
   return (
-    <div>
+    <div className="game_card">
       <div className="container">
         <div className="card">
           <div className="face face1">
@@ -15,7 +14,7 @@ const GameCards = () => {
           </div>
           <div className="face face2">
             <div className="content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+              <p className="text_game">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
               <Link to="/games/morpion">Jouer !</Link>
             </div>
           </div>
@@ -29,7 +28,7 @@ const GameCards = () => {
           </div>
           <div className="face face2">
             <div className="content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+              <p className="text_game">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
               <Link to="/games/pendu">Jouer !</Link>
             </div>
           </div>
@@ -43,13 +42,12 @@ const GameCards = () => {
           </div>
           <div className="face face2">
             <div className="content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+              <p className="text_game">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
               <Link to="/games/shifumi">Jouer !</Link>
             </div>
           </div>
         </div>
       </div>
-
       <div className="container">
         <div className="card">
           <div className="face face1">
@@ -60,7 +58,7 @@ const GameCards = () => {
           </div>
           <div className="face face2">
             <div className="content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+              <p className="text_game">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
               <Link to="/games/morpion">Jouer !</Link>
             </div>
           </div>
@@ -74,7 +72,7 @@ const GameCards = () => {
           </div>
           <div className="face face2">
             <div className="content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+              <p className="text_game">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
               <Link to="/games/pendu">Jouer !</Link>
             </div>
           </div>
@@ -88,7 +86,7 @@ const GameCards = () => {
           </div>
           <div className="face face2">
             <div className="content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+              <p className="text_game">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
               <Link to="/games/shifumi">Jouer !</Link>
             </div>
           </div>

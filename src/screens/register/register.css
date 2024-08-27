@@ -1,4 +1,4 @@
-  body {
+  .register body {
     background-image: url('../img/background.jpg');
     background-size: cover;
     background-position: center; 
@@ -8,13 +8,20 @@
     overflow: hidden;
   }
   
-  .content {
+  .register .error-message {
+    color: white;
+    font-size: 18px; 
+    margin-top: 10px; 
+    text-align: center; 
+  }
+
+  .register .content {
     position: relative;
     z-index: 2;
     color: white; 
   }
   
-  .blur-overlay {
+  .register .blur-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,7 +32,7 @@
     z-index: 1;
   }
   
-  .login-box {   
+  .register .login-box {   
     width: 400px;
     padding: 40px;
     margin: 200px auto;
@@ -35,7 +42,7 @@
     border-radius: 10px;
   }
   
-  .login-box p:first-child {
+  .register .login-box p:first-child {
     margin: 0 0 30px;
     padding: 0;
     color: #fff;
@@ -45,11 +52,11 @@
     letter-spacing: 1px;
   }
   
-  .login-box .user-box {
+  .register .login-box .user-box {
     position: relative;
   }
   
-  .login-box .user-box input {
+  .register .login-box .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -61,7 +68,7 @@
     background: transparent;
   }
   
-  .login-box .user-box label {
+  .register .login-box .user-box label {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,15 +79,15 @@
     transition: .5s;
   }
   
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
+  .register .login-box .user-box input:focus ~ label,
+  .register .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
     color: #fff;
     font-size: 12px;
   }
   
-  .login-box form .styled-button, .login-box form a {
+  .register .login-box form .styled-button, .login-box form a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -99,18 +106,18 @@
     outline: none;
   }
   
-  .login-box form .styled-button:hover, .login-box a:hover {
+  .register .login-box form .styled-button:hover, .login-box a:hover {
     background: #fff;
     color: #272727;
     border-radius: 5px;
   }
   
-  .login-box .styled-button span, .login-box a span {
+  .register .login-box .styled-button span, .login-box a span {
     position: absolute;
     display: block;
   }
   
-  .login-box .styled-button span:nth-child(1), .login-box a span:nth-child(1) {
+  .register .login-box .styled-button span:nth-child(1), .login-box a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -119,7 +126,7 @@
     animation: btn-anim1 1.5s linear infinite;
   }
 
-  .a2 {
+  .register .a2 {
     cursor: pointer;
   }
   
@@ -151,7 +158,7 @@
     }
   }
   
-  .login-box .styled-button span:nth-child(3), .login-box a span:nth-child(3) {
+  .register .login-box .styled-button span:nth-child(3), .login-box a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -170,7 +177,7 @@
     }
   }
   
-  .login-box .styled-button span:nth-child(4), .login-box a span:nth-child(4) {
+  .register .login-box .styled-button span:nth-child(4), .login-box a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -189,23 +196,23 @@
     }
   }
   
-  .login-box p:last-child {
+  .register .login-box p:last-child {
     color: #aaa;
     font-size: 14px;
   }
   
-  .login-box a.a2 {
+  .register .login-box a.a2 {
     color: #fff;
     text-decoration: none;
   }
   
-  .login-box a.a2:hover {
+  .register .login-box a.a2:hover {
     background: transparent;
     color: #aaa;
     border-radius: 5px;
   }
   
-  .buttons-menu {
+  .register .buttons-menu {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;

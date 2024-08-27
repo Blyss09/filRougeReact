@@ -1,4 +1,3 @@
-import React from 'react'
 import "../profile/profile.css"
 
 const Profile = () => {
